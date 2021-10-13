@@ -1,0 +1,71 @@
+.navHeader {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  background-color: #718096;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navHeaderLogo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 5px;
+}
+
+.navHeaderSearch {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.navHeaderSearchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 5px 0 0 5px;
+}
+
+.navHeaderSearchIcon {
+  padding: 5px;
+  height: 22px !important;
+  background-color: #4a5568;
+  border-radius: 0 5px 5px 0;
+}
+
+.navHeaderOptionLineOne {
+  font-size: 10px;
+}
+
+.navHeaderOptionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.navHeaderOptionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.navHeaderBasketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navHeaderMenu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navHeaderOption {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
