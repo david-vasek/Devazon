@@ -9,16 +9,16 @@ function Checkout() {
 
   return (
     <div className="checkout">
-      <div className="checkout__left">
+      <div className="checkoutLeft">
         <img
-          className="checkout__ad"
-          src="https://images-na.ssl-images-amazon.com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668_.jpg"
+          className="checkoutAd"
+          src="https://t3.ftcdn.net/jpg/02/68/48/86/360_F_268488616_wcoB2JnGbOD2u3bpn2GPmu0KJQ4Ah66T.jpg"
           alt=""
         />
 
         <div>
           <h3>Hello, {user?.email}</h3>
-          <h2 className="checkout__title">Your shopping Basket</h2>
+          <h2 className="checkoutTitle">Your shopping Basket</h2>
 
           {basket.map((item) => (
             <CheckoutProduct
@@ -32,7 +32,7 @@ function Checkout() {
         </div>
       </div>
 
-      <div className="checkout__right">
+      <div className="checkoutRight">
         <Subtotal />
       </div>
     </div>

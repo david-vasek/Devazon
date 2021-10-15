@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import NavHeader from "./components/NavHeader";
 import Login from "./components/Login";
 import Checkout from "./components/Checkout";
+// import Footer from "./components/Footer";
 
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
@@ -35,20 +36,23 @@ function App() {
     });
   }, []);
   return (
-    <div className="App">
-      <Router>
+    <Router>
+      <div className="App">
+        <NavHeader />
         <Switch>
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/">
-            <NavHeader />
-            <Home />
+          <Route path="/Checkout">
             <Checkout />
           </Route>
+          <Route path="/">
+            <Home />
+          </Route>
         </Switch>
-      </Router>
-    </div>
+        {/* <Footer /> */}
+      </div>
+    </Router>
   );
 }
 

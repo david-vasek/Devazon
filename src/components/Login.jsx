@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import "./Login.css";
 import { Link, useHistory } from "react-router-dom";
 import { auth } from "../firebase";
+// import { GoogleAuthProvider } from "firebase/auth";
 
 function Login() {
   const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  // const provider = new GoogleAuthProvider();
 
   const signIn = (e) => {
     e.preventDefault();
@@ -25,7 +27,6 @@ function Login() {
     auth
       .createUserWithEmailAndPassword(email, password)
       .then((auth) => {
-        // it successfully created a new user with email and password
         if (auth) {
           history.push("/");
         }

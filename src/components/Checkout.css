@@ -5,12 +5,12 @@
   height: max-content;
 }
 
-.checkout__ad {
+.checkoutAd {
   width: 100%;
   margin-bottom: 10px;
 }
 
-.checkout__title {
+.checkoutTitle {
   margin-right: 10px;
   padding: 10px;
   border-bottom: 1px solid lightgray;
